@@ -1,0 +1,35 @@
+body, html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.floating-box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    border-radius: 10px;
+    animation: floatAnimation 3s ease-in-out infinite;
+}
+
+@keyframes floatAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+50% {
+    transform: translateY(-10px);
+    box-shadow: 0px 40px 20px rgba(0, 0, 0, 0.5);
+}
+}
